@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+      {/*<link rel="stylesheet" href="" />*/}
       <body className={inter.className}>{children}</body>
     </html>
   )
