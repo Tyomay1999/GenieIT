@@ -1,0 +1,9 @@
+@import "../main";
+$navbarBackground: #1F2D5A !default;
+.main {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  background: $navbarBackground;
+}
