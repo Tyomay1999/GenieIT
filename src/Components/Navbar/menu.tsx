@@ -13,7 +13,9 @@ const Menu = () => {
                 <i className="bi bi-search"/>
             </li>
         </ul>
-        <button>Join Us</button>
+        <button
+            className={styles.joinUs}
+        >Join Us</button>
     </div>
 }
 
