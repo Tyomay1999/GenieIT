@@ -1,0 +1,120 @@
+@import "../main";
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  //justify-content: center;
+  //align-items: center;
+  padding: 2.4rem 3.6rem;
+  background: #61647C;
+
+  .info_block {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & > h1 {
+      font-size: 4rem;
+      font-family: $fontFamily;
+      font-weight: bold;
+      color: white;
+      margin-bottom: .8rem;
+    }
+
+    & > div {
+      width: 100%;
+      padding: .8rem 4rem 0 0;
+
+      & > p {
+        font-size: 2rem;
+        font-family: $fontFamily;
+        font-weight: bold;
+        word-break: break-word;
+        color: white;
+      }
+    }
+
+    .link {
+      margin-top: 1.8rem;
+      font-size: 2.375rem;
+      font-family: $fontFamily;
+      font-weight: normal;
+      word-break: break-word;
+      color: #96CEB4;
+    }
+  }
+
+  .services {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .service {
+      margin: .8rem;
+      width: 22rem;
+      height: 20rem;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+
+
+      img {
+        width: 6rem;
+        height: 6rem;
+        object-fit: cover;
+      }
+
+
+      h1 {
+        margin: 1rem 0;
+        font-family: $fontFamily;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #FFAD60;
+      }
+
+      p {
+        text-align: center;
+        font-family: $fontFamily;
+        font-size: 1rem;
+        color: #FFFFFF;
+        opacity: .7;
+        //font-weight: bold;
+      }
+
+    }
+
+    //display: flex;
+    //align-items: center;
+    //justify-content: center;
+
+    //.elips{
+    //  position: absolute;
+    //  top: calc((100% - 20rem) / 2);
+    //  left: calc((100% - 30rem) / 2);
+    //  width: 30rem;
+    //  height: 20rem;
+    //  border-radius: 50%;
+    //  background: linear-gradient(#e66465, #9198e5);
+    //}
+
+  }
+
+  .rows {
+    position: absolute;
+    width: 30rem;
+    height: 10rem;
+    left: -4rem;
+    bottom: 2rem;
+  }
+
+}

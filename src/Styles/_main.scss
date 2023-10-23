@@ -3,10 +3,16 @@
 $backgroundDark: #121A36 !default;
 $backgroundLight: #61647c !default;
 $headerHeight: 70px;
-$fontFamily: 'MuseoModerno', sans-serif;
+$fontFamily: 'Arial', sans-serif;
 //
-//@mixin h1 (){
-//  $font-size: 2.4 !default;
-//  font-family: "museo sans cyrl";
-//  //font-family: museo sans cyrl;
-//}
+@mixin h1_type ($color, $fontSize){
+  font-size: $fontSize ;
+  font-family: $fontFamily;
+  color: $color;
+}
+
+@mixin p_type ($color, $fontSize) {
+  font-size: $fontSize;
+  font-family: $fontFamily;
+  color: $color;
+}
