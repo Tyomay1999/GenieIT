@@ -18,11 +18,12 @@
 
     li {
       padding: 1rem 0;
-      width: 100%;
+      margin: 0 1rem;
+      //width: 100%;
       color: white;
       font-size: 1.375rem;
       font-family: $fontFamily;
-      margin: 0;
+      //margin: 0;
     }
 
   }
@@ -38,14 +39,20 @@
 
   .burger_menu_container,
   .burger_menu_img,
-  .menu_wrapper_show {
+  {
     display: none;
   }
+
+  .menu_wrapper_show{}
 
   .menu_wrapper_hide {
     position: fixed;
     right: -20rem;
     animation: hide_menu 3s 1;
+
+    .menu {
+      display: none;
+    }
   }
 }
 
@@ -80,7 +87,8 @@
       position: fixed;
       top: 0;
       right: 0;
-      display: block;
+      //display: block;
+      //display: flex;
       width: 20rem;
       height: 100vh;
       background: white;
@@ -89,13 +97,21 @@
 
 
       & > .menu {
+        width: 100%;
         display: flex;
         flex-direction: column;
         list-style-type: none;
 
         & li {
-         color: black;
+          color: black;
+
+          &:first-child {
+            width: 100%;
+            font-size: 2rem;
+            padding-left: .8rem;
+          }
         }
+
       }
 
     }

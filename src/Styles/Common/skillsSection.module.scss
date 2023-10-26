@@ -1,0 +1,30 @@
+@import "../main";
+.main{
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem;
+
+  .box{
+    padding: 1.2rem 1.8rem;
+    margin: .5rem 1rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1F2D5A;
+    border-radius: .8rem;
+    p{
+      @include p_type();
+    }
+  }
+
+
+
+  //.skills{
+  //  width: 100%;
+  //  height: 100%;
+  //  object-fit: cover;
+  //}
+}

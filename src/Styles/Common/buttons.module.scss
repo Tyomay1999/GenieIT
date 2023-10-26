@@ -1,0 +1,26 @@
+@import "../main";
+
+.contactUs {
+  cursor: pointer;
+  margin-top: 2rem;
+  padding: .8rem 3rem;
+  width: 20rem;
+  height: 5rem;
+  font-family: $fontFamily;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  word-spacing: 1rem;
+  border-radius: 1.5rem;
+  background: $backgroundDark;
+  border: 1px solid #1F2D5AFF;
+
+  &:hover {
+    color: $backgroundDark;
+    background: white;
+    transition: background 1s;
+  }
+
+}
+
+

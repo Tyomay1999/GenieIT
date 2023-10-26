@@ -2,6 +2,7 @@ import background_image_left_side from "../../Assets/Greeting/backgrount_ligth_g
 import business_photo_left_side from "../../Assets/Greeting/Business_photo_SVG 1.svg"
 import styles from "../../Styles/Greeting/index.module.scss"
 import Image from "next/image";
+import {ContactUsBtn} from "../Common/buttons";
 
 const Greeting = () => {
     return <div
@@ -18,10 +19,7 @@ const Greeting = () => {
                 help you be a master of any of your CS <br/>
                 desired career course.
             </p>
-            <button
-            >
-                Contact us
-            </button>
+            <ContactUsBtn />
         </div>
         <Image
             className={styles.background_image_left_side}

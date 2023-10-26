@@ -13,8 +13,7 @@
   .greeting_wrapper {
     position: absolute;
     z-index: 1;
-    width: 50rem;
-    height: 30rem;
+    padding: 1rem .8rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -22,38 +21,11 @@
 
 
     & > h1 {
-      font-size: 4rem;
-      font-family: $fontFamily;
-      font-weight: bold;
-      margin-bottom: 1.8rem;
-      color: white;
+      @include h1_type()
     }
 
     & > p {
-      font-size: 2rem;
-      font-family: $fontFamily;
-      font-weight: bold;
-      color: white;
-    }
-
-    button {
-      cursor: pointer;
-      padding: .8rem 3rem;
-      font-family: $fontFamily;
-      color: white;
-      font-weight: bold;
-      background: $backgroundDark;
-      border: 1px solid #1F2D5AFF;
-      word-spacing: 1rem;
-      border-radius: 1.5rem;
-      margin-top: 2rem;
-
-      &:hover {
-        color: $backgroundDark;
-        background: white;
-        transition: background 1s;
-      }
-
+      @include p_type();
     }
 
   }
@@ -62,7 +34,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 130%;
+    width: 165%;
     height: 100%;
     object-fit: cover;
     z-index: 0;
@@ -72,6 +44,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
+    display: block;
     width: 50rem;
     height: 55rem;
     object-fit: contain;
@@ -79,4 +52,34 @@
   }
 
 
+}
+
+
+@media screen and (max-width: 480px) {
+  .main {
+    height: 50vh;
+    justify-content: center;
+
+    .business_photo_left_side {
+      display: none;
+    }
+
+    .greeting_wrapper {
+      position: relative;
+      //width: 40rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      h1{
+        text-align: center;
+        font-size: 5rem;
+      }
+      p{
+        text-align: center;
+        font-size: 2.125rem;
+      }
+    }
+
+  }
 }

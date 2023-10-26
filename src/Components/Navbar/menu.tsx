@@ -22,8 +22,11 @@ const BurgerMenu = () => {
                 alt="Menu"
             />
         </div>
-        <div className={ show_menu ?  styles.menu_wrapper_show : styles.menu_wrapper_hide}>
+        <div className={show_menu ? styles.menu_wrapper_show : styles.menu_wrapper_hide}>
             <ul className={styles.menu}>
+                <li
+                    onClick={handleClick}
+                >X</li>
                 <li>Main</li>
                 <li>About</li>
                 <li>For Business</li>
@@ -54,9 +57,10 @@ const Menu = () => {
         <button
             onClick={() => console.log("react")}
             className={styles.joinUs}
-        >Join Us
+        >
+            Join Us
         </button>
-        <BurgerMenu />
+        <BurgerMenu/>
     </div>
 }
 

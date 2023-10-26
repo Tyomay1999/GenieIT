@@ -2,7 +2,7 @@
 import styles from "../../Styles/OfferedServices/offeredServices.module.scss"
 import rowsSVG from "../../Assets/Geometry/rows.svg"
 import cubeSVG from "../../Assets/Geometry/cube.svg"
-import piramidSVG from "../../Assets/Geometry/piramid.svg"
+import pyramidSVG from "../../Assets/Geometry/pyramid.svg"
 import bollSVG from "../../Assets/Geometry/boll.svg"
 import cylinderSVG from "../../Assets/Geometry/cylinder.svg"
 import Link from "next/link";
@@ -11,27 +11,32 @@ import Image from "next/image";
 interface ServicesI {
     icon: string,
     title: string,
+    alt: string,
     description: string
 }
 
 const services: ServicesI[] = [
     {
         icon: cubeSVG,
+        alt: "cube",
         title: "Content Strategy",
         description: "All our content marketing service packages include a custom content strategy"
     },
     {
-        icon: piramidSVG,
+        icon: pyramidSVG,
+        alt: "pyramid",
         title: "Content Development",
         description: "We create some content calendar for your company’s must-share content"
     },
     {
         icon: bollSVG,
+        alt: "boll",
         title: "Content Creation",
-        description: "Experienced in copywriting and marketing team begins creating content"
+        description: "Experienced in copy writing and marketing team begins creating content"
     },
     {
         icon: cylinderSVG,
+        alt: "cylinder",
         title: "Content Optimization",
         description: "Your content marketing management services also include SEO"
     }
@@ -59,11 +64,11 @@ const OfferedServices = () => {
         <div className={styles.services}>
             {/*<div className={styles.elips} />*/}
             {
-                services.map(service => {
-                    return <div className={styles.service}>
+                services.map((service:ServicesI, index:number) => {
+                    return <div key={index} className={styles.service}>
                         <Image
                             src={service.icon}
-                            alt="cube"
+                            alt={service.alt}
                         />
                         <h1>{service.title}</h1>
                         <p>{service.description}</p>
