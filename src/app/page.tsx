@@ -4,6 +4,7 @@ import Greeting from "../Components/Greeting";
 import OfferedServices from "../Components/ՕfferedServices";
 import AboutUs from "../Components/AboutUs";
 import SkillsSection from "../Components/Common/skillsSection";
+import WebSites from "../Components/WebSites/index";
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
             <OfferedServices/>
             <AboutUs/>
             <SkillsSection />
+            <WebSites />
         </main>
     )
 }

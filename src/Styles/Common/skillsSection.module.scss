@@ -5,18 +5,36 @@
   display: flex;
   flex-wrap: wrap;
   padding: 3rem;
+  background: $backgroundDarkGray;
+
 
   .box{
+    cursor: pointer;
     padding: 1.2rem 1.8rem;
     margin: .5rem 1rem;
     height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #1F2D5A;
+    background: #1e2749;
     border-radius: .8rem;
+    border: .4rem solid #1e2749;
+    box-shadow: 0 0 0 transparent;
+    transition: background 1s, color 1s, box-shadow 1s;
+
     p{
       @include p_type();
+      color: #9393AA;
+      span{
+        color: $backgroundDarkGray;
+      }
+    }
+
+    &:hover {
+      color: white;
+      box-shadow: 3px 3px 3px gray;
+      transition: background, color, box-shadow;
+      background: $backgroundDarkGray;
     }
   }
 

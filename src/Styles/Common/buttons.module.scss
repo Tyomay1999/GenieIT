@@ -12,11 +12,11 @@
   color: white;
   word-spacing: 1rem;
   border-radius: 1.5rem;
-  background: $backgroundDark;
+  background: $backgroundDarkBlue;
   border: 1px solid #1F2D5AFF;
 
   &:hover {
-    color: $backgroundDark;
+    color: $backgroundDarkBlue;
     background: white;
     transition: background 1s;
   }
